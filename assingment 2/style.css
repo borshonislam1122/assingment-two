@@ -1,4 +1,4 @@
-/* General Styles */
+
 body, h1, h2, h3, p, ul, li, a, button {
     margin: 0;
     padding: 0;
@@ -47,7 +47,7 @@ ul { list-style: none; }
 .curriculum {
     text-align: center;
     padding: 20px;
-    background: url('background.jpg') no-repeat center center/cover;
+    background: url('assets/bg.png') no-repeat center center/cover;
 }
 .cards {
     display: flex;
@@ -92,7 +92,7 @@ footer {
     color: #fff;
 }
 
-/* Mobile Responsiveness */
+/* response */
 @media (max-width: 768px) {
     .nav-links, .contact-btn {
         display: none;
