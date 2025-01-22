@@ -1,0 +1,121 @@
+/* General Styles */
+body, h1, h2, h3, p, ul, li, a, button {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+a { text-decoration: none; }
+ul { list-style: none; }
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background: #333;
+    color: #fff;
+}
+.nav-links {
+    display: flex;
+    gap: 15px;
+}
+.contact-btn {
+    background: #007BFF;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+/* Banner */
+.banner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+.banner-content {
+    max-width: 50%;
+}
+.banner-image {
+    max-width: 40%;
+}
+
+/* Curriculum */
+.curriculum {
+    text-align: center;
+    padding: 20px;
+    background: url('background.jpg') no-repeat center center/cover;
+}
+.cards {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+.card {
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+.arrow-buttons {
+    margin-top: 20px;
+}
+.arrow-btn {
+    padding: 10px;
+}
+
+/* Our Stories */
+.stories {
+    background: linear-gradient(to bottom, #ff9a9e, #fad0c4);
+    padding: 20px;
+}
+.story-cards {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+}
+.story-card {
+    background: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    max-width: 200px;
+}
+
+/* Footer */
+footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background: #333;
+    color: #fff;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .nav-links, .contact-btn {
+        display: none;
+    }
+    .navbar {
+        justify-content: space-between;
+    }
+    .banner {
+        flex-direction: column;
+        text-align: center;
+    }
+    .cards {
+        flex-direction: column;
+    }
+    .arrow-buttons {
+        display: none;
+    }
+    .story-cards {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+    footer {
+        flex-direction: column;
+        align-items: center;
+    }
+}
